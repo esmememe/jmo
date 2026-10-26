@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!--HEAD-START-->
+<title>JMO Maderas</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Tarimas, cajas y madera para empaque en Querétaro. Pedidos urgentes y atención 24/7. Entregamos en la zona centro del país. Cotiza por WhatsApp.">
+<meta property="og:title" content="JMO Maderas · Tarimas, cajas y madera en Querétaro">
+<meta property="og:description" content="Pedidos urgentes y atención 24/7. Respaldamos tu proyecto.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://grupojmo.com.mx/">
+<meta property="og:image" content="https://grupojmo.com.mx/assets/logo-jmo.png">
+<meta property="og:locale" content="es_MX">
+<link rel="canonical" href="https://grupojmo.com.mx/">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Big+Shoulders+Stencil+Display:wght@700;800&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "JMO Maderas",
+  "alternateName": "Grupo JMO",
+  "description": "Fabricación de tarimas, cajas y embalajes de madera. Pedidos urgentes y atención 24/7.",
+  "slogan": "Respaldamos tu proyecto",
+  "foundingDate": "2017",
+  "url": "https://grupojmo.com.mx/",
+  "logo": "https://grupojmo.com.mx/assets/logo-jmo.png",
+  "telephone": "+524422171355",
+  "email": "grupojmo@outlook.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle Libertad 240, Col. Felipe Carrillo Puerto",
+    "addressLocality": "Santiago de Querétaro",
+    "addressRegion": "Qro.",
+    "postalCode": "76138",
+    "addressCountry": "MX"
+  },
+  "areaServed": "Zona centro de México",
+  "openingHours": "Mo-Su 00:00-23:59"
+}
+</script>
+<style>
+/* Layout: banda negra de inicio, bloques apilados como tarimas; secciones alternan blanco y verde claro. Look único (claro), sin modo oscuro. */
+:root{
+  --negro:#111110;
+  --tinta:#2B2A27;
+  --gris:#5E5B55;
+  --blanco:#FFFFFF;
+  --verde:#98CC79;
+  --verde-claro:#D6EBCA;
+  --verde-hondo:#3F6B2A;
+  --madera:#897763;
+  --linea:#E3E0D8;
+  --display:'Oswald', 'Arial Narrow', Arial, sans-serif;
+  --texto:'Inter', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
+  --stencil:'Big Shoulders Stencil Display', 'Oswald', 'Arial Narrow', sans-serif;
+  --ancho:1180px;
+  color-scheme: light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--blanco);color:var(--tinta);font-family:var(--texto);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);text-transform:uppercase;line-height:1.05;margin:0;color:var(--negro);text-wrap:balance;font-weight:600;letter-spacing:.01em}
+p{margin:0}
+:focus-visible{outline:3px solid var(--verde);outline-offset:3px}
+.wrap{max-width:var(--ancho);margin:0 auto;padding-left:max(20px, env(safe-area-inset-left, 0px));padding-right:max(20px, env(safe-area-inset-right, 0px))}
+.etiqueta{font-family:var(--texto);font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--madera)}
+.seccion{padding-block:88px}
+.seccion-cabeza{display:flex;flex-direction:column;gap:14px;max-width:720px;margin-bottom:48px}
+.seccion-cabeza h2{font-size:clamp(34px,5vw,54px)}
+.seccion-cabeza p{font-size:18px;color:var(--gris);max-width:60ch}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--texto);font-weight:700;font-size:16px;text-decoration:none;padding:15px 24px;border-radius:4px;border:2px solid transparent;cursor:pointer;transition:transform .15s ease, background .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-verde{background:var(--verde);color:var(--negro)}
+.btn-verde:hover{background:#A9D78E}
+.btn-linea{border-color:currentColor;color:var(--blanco)}
+.btn-linea-oscura{border-color:var(--negro);color:var(--negro)}
+.btn-negro{background:var(--negro);color:var(--blanco)}
+
+/* Encabezado */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top, 0px);z-index:60;background:var(--blanco)}
+.encabezado{position:sticky;top:env(safe-area-inset-top, 0px);z-index:50;background:var(--blanco);border-bottom:1px solid var(--linea)}
+.encabezado .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:72px}
+.encabezado .logo img{height:46px;width:auto}
+.menu{display:flex;align-items:center;gap:30px}
+.menu a{text-decoration:none;font-weight:600;font-size:15px;color:var(--tinta)}
+.menu a:not(.btn):hover{color:var(--verde-hondo)}
+.menu .btn{padding:10px 18px;font-size:15px}
+.menu-boton{display:none;background:none;border:0;padding:10px;cursor:pointer;color:var(--negro)}
+.menu-boton svg{width:28px;height:28px}
+
+/* Inicio */
+.inicio{position:relative;background:var(--negro);color:var(--blanco);overflow:hidden}
+.inicio-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35}
+.inicio .wrap{position:relative;display:grid;grid-template-columns:1.25fr .75fr;gap:48px;align-items:center;padding-block:96px 104px}
+.inicio-texto{display:flex;flex-direction:column;gap:26px;min-width:0}
+.inicio .etiqueta{color:var(--verde)}
+.inicio h1{color:var(--blanco);font-size:clamp(46px,7.4vw,92px);font-weight:700;line-height:.98}
+.inicio h1 span{color:var(--verde)}
+.inicio-texto>p{font-size:clamp(17px,1.6vw,20px);color:#D9D6CF;max-width:52ch}
+.acciones{display:flex;flex-wrap:wrap;gap:14px}
+.bloques{position:relative;aspect-ratio:1/1;max-width:100%}
+.bloques i{position:absolute;display:block}
+.bloques .b1{right:0;top:4%;width:46%;height:52%;background:var(--verde)}
+.bloques .b2{left:4%;top:50%;width:40%;height:26%;background:var(--verde-claro)}
+.bloques .b3{left:44%;top:80%;width:30%;height:17%;background:var(--madera)}
+@media (prefers-reduced-motion: no-preference){
+  .bloques i{animation:apilar .8s cubic-bezier(.2,.8,.2,1) both}
+  .bloques .b2{animation-delay:.12s}.bloques .b3{animation-delay:.24s}
+  @keyframes apilar{from{transform:translateY(-28px)}to{transform:none}}
+}
+
+/* Franja de datos */
+.franja{background:var(--verde-claro)}
+.franja .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding-block:30px}
+.dato{display:flex;flex-direction:column;gap:2px;padding:6px 22px;border-left:2px solid rgba(17,17,16,.14)}
+.dato:first-child{border-left:0;padding-left:0}
+.dato strong{font-family:var(--stencil);font-size:44px;font-weight:800;line-height:1;color:var(--negro);letter-spacing:.02em}
+.dato span{font-size:15px;font-weight:600;color:var(--tinta)}
+
+/* Quiénes somos */
+.nosotros .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.nosotros-texto{display:flex;flex-direction:column;gap:20px;min-width:0}
+.nosotros-texto h2{font-size:clamp(34px,5vw,54px)}
+.nosotros-texto p{font-size:18px;max-width:58ch}
+.valores{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.valores li{list-style:none;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase;border:2px solid var(--negro);padding:8px 14px}
+.valores{padding:0;margin-bottom:0}
+
+/* Espacio para foto */
+.foto{position:relative;background:repeating-linear-gradient(90deg,#9A8670 0 34px,#8B7761 34px 38px,#A48F78 38px 76px,#8B7761 76px 80px);aspect-ratio:4/3;max-width:100%;display:flex;align-items:flex-end;overflow:hidden}
+.foto span{background:var(--negro);color:var(--blanco);font-size:13px;font-weight:600;padding:8px 12px;margin:14px}
+.foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* Productos */
+.productos{background:var(--blanco);border-top:1px solid var(--linea)}
+.productos-lista{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.producto{display:flex;flex-direction:column;gap:18px;min-width:0}
+.producto .foto{aspect-ratio:5/4}
+.producto h3{font-size:30px}
+.producto p{color:var(--gris)}
+.producto .medida{font-family:var(--stencil);font-size:22px;font-weight:700;color:var(--verde-hondo);letter-spacing:.04em}
+.producto .btn{align-self:flex-start;padding:11px 18px;font-size:15px}
+
+/* Industrias */
+.industrias{background:var(--verde-claro)}
+.industrias-lista{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:rgba(17,17,16,.12);border:2px solid rgba(17,17,16,.12);padding:0;margin:0}
+.industrias-lista li{list-style:none;background:var(--verde-claro);padding:26px 22px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.industrias-lista strong{font-family:var(--display);text-transform:uppercase;font-size:21px;font-weight:600;color:var(--negro);line-height:1.15}
+.industrias-lista span{font-size:15px;color:var(--tinta)}
+
+/* Por qué JMO */
+.porque{background:var(--negro);color:#D9D6CF}
+.porque h2{color:var(--blanco)}
+.porque .etiqueta{color:var(--verde)}
+.porque .seccion-cabeza p{color:#B9B5AC}
+.razones{display:grid;grid-template-columns:repeat(4,1fr);gap:36px}
+.razon{display:flex;flex-direction:column;gap:12px;border-top:3px solid var(--verde);padding-top:22px;min-width:0}
+.razon h3{color:var(--blanco);font-size:24px}
+.razon p{font-size:16px}
+
+/* Clientes */
+.clientes .wrap{display:flex;flex-direction:column;gap:28px}
+.clientes-lista{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:0;margin:0}
+.clientes-lista li{list-style:none;border:1px solid var(--linea);padding:28px 16px;text-align:center;font-family:var(--display);font-size:24px;font-weight:600;text-transform:uppercase;color:var(--gris);letter-spacing:.04em}
+
+/* Reseñas */
+.resenas{background:var(--blanco);border-top:1px solid var(--linea)}
+.resenas .wrap{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.resenas-texto{display:flex;flex-direction:column;gap:16px;min-width:0}
+.resenas-texto h2{font-size:clamp(30px,4vw,44px)}
+.estrellas{display:flex;gap:4px;color:var(--verde-hondo)}
+.estrellas svg{width:26px;height:26px}
+.resenas .acciones{justify-content:flex-start}
+
+/* Contacto */
+.contacto{background:var(--verde)}
+.contacto .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.contacto-texto{display:flex;flex-direction:column;gap:20px;min-width:0}
+.contacto-texto h2{font-size:clamp(38px,6vw,68px);font-weight:700}
+.contacto-texto p{font-size:19px;color:var(--negro);max-width:46ch}
+.contacto .acciones .btn-verde{background:var(--negro);color:var(--blanco)}
+.datos{background:var(--blanco);padding:32px;display:flex;flex-direction:column;gap:0;min-width:0}
+.datos div{display:grid;grid-template-columns:120px 1fr;gap:12px;padding-block:16px;border-bottom:1px solid var(--linea)}
+.datos div:last-of-type{border-bottom:0}
+.datos dt{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--madera);padding-top:3px}
+.datos dd{margin:0;font-weight:600;color:var(--negro);overflow-wrap:anywhere}
+.datos dd a{text-decoration:none}
+.datos dd a:hover{text-decoration:underline}
+.datos dl{margin:0}
+.datos .btn{margin-top:18px}
+
+/* Pie */
+.pie{background:var(--negro);color:#B9B5AC;font-size:15px}
+.pie .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;padding-block:56px 40px}
+.pie img{height:56px;width:auto}
+.pie h3{font-size:16px;color:var(--blanco);letter-spacing:.08em;margin-bottom:12px}
+.pie ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.pie a{text-decoration:none}
+.pie a:hover{color:var(--verde)}
+.pie-lema{margin-top:16px;font-family:var(--display);text-transform:uppercase;font-size:20px;color:var(--verde-claro);letter-spacing:.04em}
+.pie-final{border-top:1px solid #2E2D2A}
+.pie-final .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:20px;grid-template-columns:none;font-size:14px}
+
+/* WhatsApp flotante */
+.wa-flotante{position:fixed;right:calc(18px + env(safe-area-inset-right, 0px));bottom:calc(18px + env(safe-area-inset-bottom, 0px));z-index:70;width:60px;height:60px;border-radius:50%;background:#25D366;color:#FFFFFF;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 20px rgba(0,0,0,.28);transition:transform .15s ease}
+.wa-flotante:hover{transform:scale(1.07)}
+.wa-flotante svg{width:32px;height:32px}
+
+/* Tablet */
+@media (max-width: 980px){
+  .productos-lista{grid-template-columns:1fr 1fr}
+  .industrias-lista,.razones{grid-template-columns:1fr 1fr}
+  .franja .wrap{grid-template-columns:1fr 1fr;row-gap:22px}
+  .dato:nth-child(3){border-left:0;padding-left:0}
+  .pie .wrap{grid-template-columns:1fr 1fr}
+}
+/* Celular */
+@media (max-width: 760px){
+  body{font-size:16px}
+  .seccion{padding-block:64px}
+  .menu-boton{display:block}
+  .menu{display:none;position:absolute;left:0;right:0;top:72px;background:var(--blanco);flex-direction:column;align-items:stretch;gap:0;border-bottom:1px solid var(--linea);padding:8px max(20px, env(safe-area-inset-right, 0px)) 20px max(20px, env(safe-area-inset-left, 0px))}
+  .menu.abierto{display:flex}
+  .menu a:not(.btn){padding:14px 0;border-bottom:1px solid var(--linea);font-size:17px}
+  .menu .btn{margin-top:16px;padding:14px}
+  .encabezado .logo img{height:40px}
+  .inicio .wrap{grid-template-columns:1fr;padding-block:56px 64px;gap:28px}
+  .bloques{width:52%;justify-self:end;order:-1;margin-bottom:-12px}
+  .acciones .btn{flex:1 1 220px}
+  .nosotros .wrap,.resenas .wrap,.contacto .wrap{grid-template-columns:1fr;gap:36px}
+  .productos-lista{grid-template-columns:1fr}
+  .industrias-lista{grid-template-columns:1fr}
+  .razones{grid-template-columns:1fr;gap:28px}
+  .clientes-lista{grid-template-columns:1fr 1fr}
+  .dato{padding:4px 14px;min-width:0}
+  .dato strong{font-size:30px}
+  .clientes-lista li{font-size:16px;padding:22px 8px;min-width:0;overflow-wrap:anywhere}
+  .datos{padding:22px}
+  .datos div{grid-template-columns:1fr;gap:2px}
+  .pie .wrap{grid-template-columns:1fr}
+}
+</style>
+<!--HEAD-END-->
+</head>
+<body>
+<!--BODY-START-->
+<header class="encabezado">
+  <div class="wrap">
+    <a class="logo" href="#inicio" aria-label="JMO Maderas, ir al inicio"><img src="assets/logo-jmo.png" alt="Grupo JMO, maderas, tarimas y empaques" width="1088" height="461"></a>
+    <button class="menu-boton" id="menu-boton" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#nosotros">Quiénes somos</a>
+      <a href="#productos">Productos</a>
+      <a href="#industrias">Industrias</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn btn-verde" href="https://wa.me/524424651881?text=Hola%20JMO%2C%20quiero%20cotizar" target="_blank" rel="noopener">Cotizar</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="inicio" id="inicio">
+  <!-- Video de fondo: cuando llegue, guardarlo como assets/inicio.mp4 (corto, sin audio, menos de 6 MB) y quitar este comentario:
+  <video class="inicio-video" autoplay muted loop playsinline poster="assets/inicio.jpg"><source src="assets/inicio.mp4" type="video/mp4"></video>
+  -->
+  <div class="wrap">
+    <div class="inicio-texto">
+      <p class="etiqueta">Tarimas, cajas y madera · Querétaro</p>
+      <h1>Respaldamos <span>tu proyecto</span></h1>
+      <p>Fabricamos tarimas, cajas y embalajes de madera para que tu carga salga a tiempo. Atendemos pedidos urgentes y te contestamos a cualquier hora.</p>
+      <div class="acciones">
+        <a class="btn btn-verde" href="https://wa.me/524424651881?text=Hola%20JMO%2C%20quiero%20cotizar" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+          Cotizar por WhatsApp
+        </a>
+        <a class="btn btn-linea" href="https://wa.me/524424651881?text=Hola%20JMO%2C%20quiero%20solicitar%20una%20muestra" target="_blank" rel="noopener">Solicitar muestra</a>
+      </div>
+    </div>
+    <div class="bloques" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i></div>
+  </div>
+</section>
+
+<section class="franja" aria-label="JMO en números">
+  <div class="wrap">
+    <div class="dato"><strong>2017</strong><span>Fabricando desde</span></div>
+    <div class="dato"><strong>24/7</strong><span>Atención todos los días</span></div>
+    <div class="dato"><strong>URGENTE</strong><span>Pedidos de último momento</span></div>
+    <div class="dato"><strong>CENTRO</strong><span>Entregas en la zona centro</span></div>
+  </div>
+</section>
+
+<section class="seccion nosotros" id="nosotros">
+  <div class="wrap">
+    <div class="nosotros-texto">
+      <p class="etiqueta">Quiénes somos</p>
+      <h2>Una empresa que está en la obra contigo</h2>
+      <p>JMO Maderas nació en Querétaro en 2017. Fabricamos tarimas, cajas y embalajes de madera para empresas que mueven producto todos los días y no pueden detener su línea por falta de empaque.</p>
+      <p>Hablamos claro, cumplimos lo que prometemos y respondemos rápido. Si tu pedido es para mañana, dinos y lo resolvemos.</p>
+      <ul class="valores"><li>Capaces</li><li>Dispuestos</li><li>Competentes</li></ul>
+    </div>
+    <div class="foto"><span>Foto pendiente: el equipo en el patio con tarimas</span></div>
+  </div>
+</section>
+
+<section class="seccion productos" id="productos">
+  <div class="wrap">
+    <div class="seccion-cabeza">
+      <p class="etiqueta">Productos</p>
+      <h2>Lo que fabricamos</h2>
+      <p>Medidas estándar o hechas a la medida de tu carga. Cuéntanos qué vas a mover y te decimos qué te conviene.</p>
+    </div>
+    <div class="productos-lista">
+      <article class="producto">
+        <div class="foto"><span>Foto pendiente: tarimas apiladas</span></div>
+        <p class="medida">1.00 × 1.20 m · a la medida</p>
+        <h3>Tarimas</h3>
+        <p>Nuevas, para carga ligera o pesada, para almacén, transporte o exportación.</p>
+        <a class="btn btn-linea-oscura" href="https://wa.me/524424651881?text=Hola%20JMO%2C%20quiero%20cotizar%20tarimas" target="_blank" rel="noopener">Cotizar tarimas</a>
+      </article>
+      <article class="producto">
+        <div class="foto"><span>Foto pendiente: caja o embalaje armado</span></div>
+        <p class="medida">Cajas · huacales · embalaje</p>
+        <h3>Cajas y embalajes</h3>
+        <p>Cajas y huacales de madera para proteger maquinaria, piezas y producto delicado.</p>
+        <a class="btn btn-linea-oscura" href="https://wa.me/524424651881?text=Hola%20JMO%2C%20quiero%20cotizar%20cajas%20o%20embalaje" target="_blank" rel="noopener">Cotizar cajas</a>
+      </article>
+      <article class="producto">
+        <div class="foto"><span>Foto pendiente: madera en patio</span></div>
+        <p class="medida">Tabla · polín · barrote</p>
+        <h3>Madera</h3>
+        <p>Madera en las medidas que necesites para tu taller, tu obra o tu propio embalaje.</p>
+        <a class="btn btn-linea-oscura" href="https://wa.me/524424651881?text=Hola%20JMO%2C%20quiero%20cotizar%20madera" target="_blank" rel="noopener">Cotizar madera</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="seccion industrias" id="industrias">
+  <div class="wrap">
+    <div class="seccion-cabeza">
+      <p class="etiqueta">Industrias</p>
+      <h2>A quién le trabajamos</h2>
+      <p>Empresas que necesitan empaque confiable, a tiempo y al precio correcto.</p>
+    </div>
+    <ul class="industrias-lista">
+      <li><strong>Agroindustria</strong><span>Tarimas y cajas para campo y empaque</span></li>
+      <li><strong>Exportadores</strong><span>Embalaje para envíos al extranjero</span></li>
+      <li><strong>Logística y CEDIS</strong><span>Tarimas para almacén y distribución</span></li>
+      <li><strong>Embalaje especializado</strong><span>Cajas a la medida de cada pieza</span></li>
+      <li><strong>Manufactura y metalmecánica</strong><span>Carga pesada y piezas industriales</span></li>
+      <li><strong>Mudanzas</strong><span>Huacales y cajas para traslado</span></li>
+      <li><strong>Comercio</strong><span>Mayoreo y menudeo</span></li>
+      <li><strong>Minería y energía</strong><span>Embalaje resistente para equipo</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="seccion porque" id="porque">
+  <div class="wrap">
+    <div class="seccion-cabeza">
+      <p class="etiqueta">Por qué JMO</p>
+      <h2>Cuando lo necesitas, ahí estamos</h2>
+    </div>
+    <div class="razones">
+      <div class="razon"><h3>Pedidos urgentes</h3><p>Si tu línea se detiene por falta de tarimas, te ayudamos a resolverlo lo antes posible.</p></div>
+      <div class="razon"><h3>Atención 24/7</h3><p>Escríbenos a cualquier hora. Alguien de JMO te va a contestar.</p></div>
+      <div class="razon"><h3>Precio justo</h3><p>Cotización clara, sin sorpresas, para compras, gerencia o dueño.</p></div>
+      <div class="razon"><h3>Entregas en la zona centro</h3><p>Llevamos tu pedido a Querétaro y a los estados de la zona centro del país.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="seccion clientes" id="clientes">
+  <div class="wrap">
+    <div class="seccion-cabeza">
+      <p class="etiqueta">Clientes</p>
+      <h2>Empresas que confían en nosotros</h2>
+    </div>
+    <ul class="clientes-lista">
+      <li>CNH</li><li>Spicer</li><li>Therbal</li><li>Vibracoustic</li>
+    </ul>
+  </div>
+</section>
+
+<section class="seccion resenas" id="resenas">
+  <div class="wrap">
+    <div class="resenas-texto">
+      <p class="etiqueta">Reseñas</p>
+      <h2>Lo que dicen de JMO en Google</h2>
+      <p>La mayoría de nuestros clientes llegan por recomendación. Lee lo que opinan o deja tu reseña si ya trabajaste con nosotros.</p>
+    </div>
+    <div class="acciones">
+      <a class="btn btn-negro" href="https://maps.app.goo.gl/y8afrQhf4VwrKmuF8" target="_blank" rel="noopener">Ver reseñas en Google</a>
+    </div>
+  </div>
+</section>
+
+<section class="seccion contacto" id="contacto">
+  <div class="wrap">
+    <div class="contacto-texto">
+      <p class="etiqueta" style="color:var(--negro)">Contacto</p>
+      <h2>Cotiza hoy tu pedido</h2>
+      <p>Mándanos por WhatsApp qué necesitas, cuántas piezas y para cuándo. Te respondemos con precio y tiempo de entrega.</p>
+      <div class="acciones">
+        <a class="btn btn-verde" href="https://wa.me/524424651881?text=Hola%20JMO%2C%20quiero%20cotizar" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+        <a class="btn btn-linea-oscura" href="https://wa.me/524424651881?text=Hola%20JMO%2C%20quiero%20solicitar%20una%20muestra" target="_blank" rel="noopener">Solicitar muestra</a>
+      </div>
+    </div>
+    <div class="datos">
+      <dl>
+        <div><dt>WhatsApp</dt><dd><a href="https://wa.me/524424651881" target="_blank" rel="noopener">442 465 1881</a></dd></div>
+        <div><dt>Teléfono</dt><dd><a href="tel:+524422171355">442 217 1355</a></dd></div>
+        <div><dt>Correo</dt><dd><a href="mailto:grupojmo@outlook.com">grupojmo@outlook.com</a></dd></div>
+        <div><dt>Dirección</dt><dd>Calle Libertad 240, Col. Felipe Carrillo Puerto, Querétaro, Qro. CP 76138</dd></div>
+        <div><dt>Horario</dt><dd>Atención 24/7</dd></div>
+      </dl>
+      <a class="btn btn-negro" href="https://www.google.com/maps/search/?api=1&amp;query=Calle%20Libertad%20240%2C%20Felipe%20Carrillo%20Puerto%2C%2076138%20Quer%C3%A9taro" target="_blank" rel="noopener">Cómo llegar en Google Maps</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pie">
+  <div class="wrap">
+    <div>
+      <img src="assets/logo-jmo-blanco.png" alt="Grupo JMO" width="1088" height="461">
+      <p class="pie-lema">Respaldamos tu proyecto</p>
+    </div>
+    <div>
+      <h3>Secciones</h3>
+      <ul><li><a href="#nosotros">Quiénes somos</a></li><li><a href="#productos">Productos</a></li><li><a href="#industrias">Industrias</a></li><li><a href="#contacto">Contacto</a></li></ul>
+    </div>
+    <div>
+      <h3>Contacto</h3>
+      <ul><li>WhatsApp 442 465 1881</li><li>Tel. 442 217 1355</li><li>grupojmo@outlook.com</li><li>Querétaro, Qro.</li></ul>
+    </div>
+  </div>
+  <div class="pie-final"><div class="wrap"><span>© 2026 JMO Maderas</span><span>Tarimas, cajas y madera en Querétaro</span></div></div>
+</footer>
+
+<a class="wa-flotante" href="https://wa.me/524424651881?text=Hola%20JMO%2C%20quiero%20cotizar" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
+</a>
+
+<script>
+(function(){
+  var boton=document.getElementById('menu-boton'), menu=document.getElementById('menu');
+  boton.addEventListener('click',function(){
+    var abierto=menu.classList.toggle('abierto');
+    boton.setAttribute('aria-expanded',abierto?'true':'false');
+  });
+  menu.addEventListener('click',function(e){
+    if(e.target.tagName==='A'){menu.classList.remove('abierto');boton.setAttribute('aria-expanded','false');}
+  });
+})();
+</script>
+<!--BODY-END-->
+</body>
+</html>
